@@ -61,9 +61,9 @@ const Container = () => {
             </li>
             {playersArray.map((player) => {
               return (
-                <li className="bg-white border-solid border-2 border-gray-200 py-4 rounded-md w-[95%] my-6"  onClick={() => HandleSelectPlayer(player.id)}>
+                <li className="bg-white border-solid border-2 border-gray-200 py-4 rounded-md w-[95%] my-6">
                   <div className="flex">
-                    <span className="w-[33%] font-bold pl-2">
+                    <span className="w-[33%] font-bold pl-2" onClick={() => HandleSelectPlayer(player.id)}>
                       {player.name}
                     </span>
                     <span className="w-[33%] font-bold pl-2">
